@@ -20,35 +20,6 @@
 
 ---
 
-## 📖 Table of Contents
-
-- [What is TriPlanner?](#-what-is-triplanner)
-- [Why Multi-Agent?](#-why-multi-agent)
-- [Key Features](#-key-features)
-- [Architecture](#-architecture)
-- [Agent Workflow](#-agent-workflow)
-- [How Data Moves Through the System](#-how-data-moves-through-the-system)
-- [Agents](#-agents)
-- [Shared TravelState](#-shared-travelstate)
-- [Conversation Persistence](#-conversation-persistence)
-- [Tools and External APIs](#-tools-and-external-apis)
-- [Frontend Architecture](#-frontend-architecture)
-- [Project Structure](#-project-structure)
-- [Tech Stack](#-tech-stack)
-- [API](#-api)
-- [Environment Variables](#-environment-variables)
-- [Local Setup](#-local-setup)
-- [Docker](#-docker)
-- [Example Prompts](#-example-prompts)
-- [Design Decisions](#-design-decisions)
-- [Failure Handling](#-failure-handling)
-- [Roadmap](#-roadmap)
-- [Limitations](#-limitations)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Author](#-author)
-
----
 
 # 🌍 What is TriPlanner?
 
