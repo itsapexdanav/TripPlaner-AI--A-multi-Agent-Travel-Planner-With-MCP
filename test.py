@@ -1,6 +1,8 @@
-from backend import run_travel_agent
-user_input=input("Enter the travel request.")
+import asyncio
+# from mcp_client_test import get_all_tools, tavily_mcp_search
+from mcp_client import get_all_tools
 
-response= run_travel_agent(user_input=user_input,thread_id="test_user")
-print("\nFinal Response : \n")
-print(response["answer"]) 
+
+
+if __name__ == "__main__":
+    asyncio.run(get_all_tools())
