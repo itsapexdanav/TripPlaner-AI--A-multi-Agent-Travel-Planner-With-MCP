@@ -731,85 +731,6 @@ It handles:
 
 ---
 
-# 📁 Project Structure
-
-```text
-TriPlanner/
-│
-├── app.py
-│   └── FastAPI application and API endpoints
-│
-├── backend.py
-│   └── LangGraph workflow, agents and state
-│
-├── requirements.txt
-│   └── Python dependencies
-│
-├── test.py
-│   └── Development/testing script
-│
-├── DockerFile
-│   └── Docker image configuration
-│
-├── .dockerignore
-│   └── Files excluded from Docker build context
-│
-├── .gitignore
-│
-├── .env
-│   └── Local secrets and configuration
-│
-├── LICENSE
-│
-├── README.md
-│
-├── static/
-│   ├── script.js
-│   │   └── Frontend behavior and API communication
-│   │
-│   └── style.css
-│       └── Frontend styling
-│
-├── templates/
-│   └── index.html
-│       └── Main web interface
-│
-└── tools/
-    ├── __init__.py
-    ├── flight_tool.py
-    │   └── AviationStack / airport resolution
-    │
-    └── tavily_tool.py
-        └── Tavily web-search integration
-```
-
----
-
-# 🛠️ Tech Stack
-
-| Layer              | Technology                    |
-| ------------------ | ----------------------------- |
-| Language           | Python 3.11+                  |
-| API Framework      | FastAPI                       |
-| ASGI Server        | Uvicorn                       |
-| Agent Framework    | LangGraph                     |
-| LLM Framework      | LangChain                     |
-| LLM Provider       | Groq                          |
-| Flight Data        | AviationStack                 |
-| Web Search         | Tavily                        |
-| Airport Data       | airportsdata                  |
-| Country Data       | pycountry                     |
-| Database           | PostgreSQL                    |
-| Graph Persistence  | langgraph-checkpoint-postgres |
-| Database Driver    | psycopg                       |
-| Templates          | Jinja2                        |
-| Frontend           | HTML + CSS + JavaScript       |
-| Markdown Rendering | Marked.js                     |
-| PDF Export         | html2pdf.js                   |
-| Containerization   | Docker                        |
-| Version Control    | Git / GitHub                  |
-
----
 
 # 📡 API
 
@@ -823,42 +744,7 @@ TriPlanner exposes a small REST API.
 
 ---
 
-## `GET /`
 
-Returns the TriPlanner web application.
-
-```text
-http://127.0.0.1:8000/
-```
-
----
-
-## `GET /health`
-
-Health-check endpoint.
-
-Example:
-
-```json
-{
-  "status": "ok"
-}
-```
-
----
-
-## `POST /api/travel`
-
-Main travel-planning endpoint.
-
-### Request
-
-```json
-{
-  "message": "Plan a 5-day trip to Tokyo with a budget of $1200",
-  "thread_id": null
-}
-```
 
 ### Request with existing conversation
 
@@ -1457,85 +1343,6 @@ The Docker image should also receive secrets through environment configuration r
 
 ---
 
-# 🤝 Contributing
-
-Contributions are welcome.
-
-## 1. Fork the repository
-
-Create your own fork on GitHub.
-
-## 2. Clone it
-
-```bash
-git clone <your-fork-url>
-cd TripPlaner-AI--A-multi-Agent-Travel-Planner-With-LangGraph
-```
-
-## 3. Create a branch
-
-```bash
-git checkout -b feature/my-feature
-```
-
-## 4. Make your changes
-
-Keep changes focused and test the application.
-
-## 5. Commit
-
-```bash
-git add .
-git commit -m "Add my feature"
-```
-
-## 6. Push
-
-```bash
-git push origin feature/my-feature
-```
-
-## 7. Open a Pull Request
-
-Describe:
-
-- What changed
-- Why it changed
-- How it was tested
-
----
-
-# 📜 License
-
-This project is licensed under the **Apache License 2.0**.
-
-See the [`LICENSE`](./LICENSE) file for details.
-
----
-
-# 👨‍💻 Author
-
-## Nirmal Singh
-
-AI/ML and Backend Engineering enthusiast focused on:
-
-- AI Agents
-- RAG systems
-- Backend engineering
-- Distributed systems
-- LLM applications
-
-# ⭐ TriPlanner
-
-If you find the project useful:
-
-- ⭐ Star the repository
-- 🍴 Fork it
-- 🐛 Open an issue
-- 💡 Suggest improvements
-- 🤝 Contribute
-
----
 
 <p align="center">
 
@@ -1543,6 +1350,6 @@ If you find the project useful:
 
 **From a simple travel request to an AI-generated travel plan.**
 
-Built with **Python · FastAPI · LangGraph · LangChain · Groq · PostgreSQL · Tavily · AviationStack**
+Built with **Python · FastAPI · LangGraph . MCP · LangChain · Groq · PostgreSQL · Tavily · AviationStack**
 
 </p>
